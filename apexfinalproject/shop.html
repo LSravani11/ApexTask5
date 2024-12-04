@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Furniture Store - Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Furniture Store</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cart Button -->
+    <div class="cart-container">
+        <button id="cart-button" onclick="toggleCart()">Cart (0)</button>
+    </div>
+
+    <!-- Shop Section -->
+    <!-- Shop Section -->
+    <section class="shop">
+        <h2>Our Furniture Collection</h2>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="https://www.itl.cat/pngfile/big/55-552360_wooden-sofa-set-311-full-size-of-sofas.jpg" alt="Sofa">
+                <p>Sofa - $500</p>
+                <button onclick="addToCart('Sofa', 500)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://wallpapercave.com/wp/wp7706330.jpg" alt="Table">
+                <p>Table - $300</p>
+                <button onclick="addToCart('Table', 300)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71p1V01u5SL.jpg" alt="Chair">
+                <p>Chair - $120</p>
+                <button onclick="addToCart('Chair', 120)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/d8/3b/da/d83bda0cba72885444276941e4044560.jpg" alt="Bookshelf">
+                <p>Bookshelf - $200</p>
+                <button onclick="addToCart('Bookshelf', 200)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://wallpapercave.com/wp/wp7505560.jpg" alt="Lamp">
+                <p>Lamp - $50</p>
+                <button onclick="addToCart('Lamp', 50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/e3/39/25/e339256df74a6d846c7efac07e15f5d5.jpg" alt="Bed">
+                <p>Bed - $700</p>
+                <button onclick="addToCart('Bed', 700)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://secure.img.wfcdn.com/lf/maxsquare/hash/2902/14667848/1/.jpg" alt="Dresser">
+                <p>Dresser - $350</p>
+                <button onclick="addToCart('Dresser', 350)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://images.homedepot-static.com/productImages/b6cccbf5-4f68-492d-a3b0-e7a168fa1f49/svn/gray-baxton-studio-ottomans-28862-4390-hd-64_1000.jpg" alt="Ottoman">
+                <p>Ottoman - $180</p>
+                <button onclick="addToCart('Ottoman', 180)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/818f0tvJT-L._AC_UF894,1000_QL80_DpWeblab_.jpg" alt="TV Stand">
+                <p>TV Stand - $250</p>
+                <button onclick="addToCart('TV Stand', 250)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="http://www.avetexfurniture.com/images/products/6/49896/classic-coffee-table-dark-walnut-hd-017-b.jpg" alt="Coffee Table">
+                <p>Coffee Table - $150</p>
+                <button onclick="addToCart('Coffee Table', 150)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    </section>
+
+    <!-- Cart Section -->
+    <div id="cart" class="cart">
+        <h3>Your Cart</h3>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="goToCheckout()">Checkout</button>
+        <button onclick="toggleCart()">Close</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Furniture Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

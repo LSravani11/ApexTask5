@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.navbar .nav-links li {
+    margin: 0;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #575757;
+}
+
+/* Checkout Section */
+.checkout {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+   
+}
+
+.checkout h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.checkout p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#checkout-items {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
